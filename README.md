@@ -23,3 +23,4 @@
 
 - 뇌 메모리 적게 쓰기
 - Early return
+- 사고의 depth 줄이기
