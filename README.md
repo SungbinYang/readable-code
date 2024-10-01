@@ -35,3 +35,4 @@
 - 객체 설계하기 (1)
 - 객체 설계하기 (2)
 - SOLID
+- SRP: Single Responsibility Principle
