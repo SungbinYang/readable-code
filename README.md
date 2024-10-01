@@ -37,3 +37,4 @@
 - SOLID
 - SRP: Single Responsibility Principle
 - OCP: Open-Closed Principle
+- LSP: Liskov Substitution Principle
