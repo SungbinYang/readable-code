@@ -41,3 +41,7 @@
 - ISP: Interface Segregation Principle
 - DIP: Dependency Inversion Principle
 - 키워드 정리
+
+### 객체지향 적용하기
+
+- 상속과 조합
