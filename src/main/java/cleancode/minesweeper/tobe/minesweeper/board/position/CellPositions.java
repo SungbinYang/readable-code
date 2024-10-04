@@ -14,6 +14,23 @@ public class CellPositions {
         this.positions = positions;
     }
 
+    public static CellPositions of(List<CellPosition> cellPositions) {
+        return new CellPositions(cellPositions);
+    }
+
+    public static CellPositions from(Cell[][] cells) {
+        List<CellPosition> cellPositions = new ArrayList<>();
+
+        for (int row = 0; row < cells.length; row++) {
+            for (int col = 0; col < cells[0].length; col++) {
+                CellPosition cellPosition = CellPosition.of(row, col);
+                cellPositions.add(cellPosition);
+            }
+        }
+
+        return of(cellPositions);
+    }
+
     public List<CellPosition> extractRandomPositions(int count) {
         List<CellPosition> cellPositions = new ArrayList<>(positions);
 
@@ -37,22 +54,5 @@ public class CellPositions {
 
     public List<CellPosition> getPositions() {
         return new ArrayList<>(positions);
-    }
-
-    public static CellPositions of(List<CellPosition> cellPositions) {
-        return new CellPositions(cellPositions);
-    }
-
-    public static CellPositions from(Cell[][] cells) {
-        List<CellPosition> cellPositions = new ArrayList<>();
-
-        for (int row = 0; row < cells.length; row++) {
-            for (int col = 0; col < cells[0].length; col++) {
-                CellPosition cellPosition = CellPosition.of(row, col);
-                cellPositions.add(cellPosition);
-            }
-        }
-
-        return of(cellPositions);
     }
 }
